@@ -12,6 +12,7 @@ public class ModalWindowsTest extends BeforeModalWindowsTest {
 
     @Test
     public void testClickForJSAlert() {
+
         mainPageModalWindows.firstButtonClick();
         log.info("The allert window appeared");
         alert.switchToAllertOk();
@@ -38,7 +39,7 @@ public class ModalWindowsTest extends BeforeModalWindowsTest {
         String actualMessage = mainPageModalWindows.getResultTest();
         log.info(actualMessage);
         Assert.assertEquals(actualMessage, String.format("You entered: %s", expectedMessage));
-
+        System.out.println("For Jenkins");
     }
 }
 
